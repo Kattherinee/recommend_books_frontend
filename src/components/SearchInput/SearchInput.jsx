@@ -67,10 +67,10 @@ const SearchInput = ({ onSearch }) => {
             placeholder="Выберите жанры"
           />
         )}
-        <StarRating initialRating={2.5} onRatingChange={handleRatingChange} />
         <button className={styles.button} onClick={handleSearch}>
           Искать
         </button>
+        <StarRating initialRating={2.5} onRatingChange={handleRatingChange} />
       </div>
     </div>
   );

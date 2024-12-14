@@ -23,6 +23,7 @@ const HomePage = () => {
               book_title: searchData.query,
               top_n: 5,
               min_rating: searchData.rating,
+              genre_filter: searchData.genres,
             }
           : {
               prompt: searchData.query,

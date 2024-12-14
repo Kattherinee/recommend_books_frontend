@@ -14,7 +14,7 @@ const StarRating = ({ initialRating = 2.5, onRatingChange }) => {
         count={5}
         value={initialRating}
         onChange={handleRatingChange}
-        size={30}
+        size={32}
         isHalf={true}
         activeColor="#ffd700"
       />
