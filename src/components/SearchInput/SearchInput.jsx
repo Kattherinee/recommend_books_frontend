@@ -34,7 +34,11 @@ const SearchInput = ({ onSearch }) => {
 
   const handleSearch = () => {
     const selectedGenreValues = selectedGenres.map((genre) => genre.value);
-    onSearch({ query, genres: selectedGenreValues, rating });
+    onSearch({
+      query,
+      genres: selectedGenreValues.length > 0 ? selectedGenreValues : [],
+      rating,
+    });
   };
 
   const handleRatingChange = (newRating) => {

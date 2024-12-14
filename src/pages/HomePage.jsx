@@ -28,7 +28,7 @@ const HomePage = () => {
               prompt: searchData.query,
               top_n: 5,
               min_rating: searchData.rating,
-              genre_filter: searchData.genre,
+              genre_filter: searchData.genres,
             };
 
       console.log("Sending payload:", payload);
