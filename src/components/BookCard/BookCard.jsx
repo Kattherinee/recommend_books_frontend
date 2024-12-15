@@ -6,11 +6,15 @@ const BookCard = ({ title, author, genres, rating, cover }) => {
     <div className={styles.card}>
       <img src={cover} alt={`Cover of ${title}`} className={styles.cover} />
       <h3 className={styles.title}>{title}</h3>
-      <p className={styles.author}>Author: {author}</p>
-      <p className={styles.genres}>
-        Genres: {genres && genres.length > 0 ? genres.join(", ") : "N/A"}
+      <p className={styles.author}>
+        <b>Author:</b> {author}
       </p>
-      <p className={styles.rating}>Rating: {rating}</p>
+      <p className={styles.genres}>
+        <b>Genres:</b> {genres && genres.length > 0 ? genres.join(", ") : "N/A"}
+      </p>
+      <p className={styles.rating}>
+        <b>Rating:</b> {rating}
+      </p>
     </div>
   );
 };
